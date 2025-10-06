@@ -1,0 +1,135 @@
+<!-- main top images -->
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+#sableandseal img {
+  width: 100%;          
+  height: 500px;        /* your chosen banner height */
+  object-fit: cover;    /* crop so it fills the box */
+  object-position: center;  /* keep the middle of the image visible */
+  display: block;
+}
+
+
+#landscapemc img {
+  width: 100%;          
+  height: 500px;        /* your chosen banner height */
+  object-fit: cover;    /* crop so it fills the box */
+  object-position: center;  /* keep the middle of the image visible */
+  display: block;
+}
+
+/* --- Header & Global Navigation --- */
+header {
+  padding: 10px 16px;
+}
+
+/* Title */
+header h1 {
+  display: inline-block;   /* sit on same line as nav */
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* Navigation block */
+header nav {
+  display: inline-block;   /* sit beside the title */
+  vertical-align: middle;
+  margin-left: 24px;       /* space between title and menu */
+}
+
+/* Navigation list */
+header nav ul {
+  list-style-type: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline;         /* make items horizontal */
+  margin: 0 12px;          /* spacing between items */
+}
+
+header nav a {
+  text-decoration: none;   /* remove underline */
+  color: black;
+  font-weight: bold;
+}
+
+
+.subnav {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.subnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: table;       /* make the UL behave like a table */
+  width: 100%;          /* stretch full width */
+  table-layout: fixed;  /* equal column widths */
+  text-align: center;   /* center text inside each cell */
+}
+
+.subnav li {
+  display: table-cell;  /* each <li> becomes equal-width cell */
+}
+
+.subnav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;      /* make the words bigger */
+  color: black;
+}
+
+.subnav a:hover {
+  color: darkblue;
+}
+
+
+header {
+  display: flex;                 /* put branding and nav on the same row */
+  justify-content: space-between;/* push left/right */
+  align-items: center;           /* vertical centering */
+  padding: 10px 16px;
+}
+
+/* Logo + title side-by-side */
+header h1 {
+  display: flex;                 /* logo and text inline */
+  align-items: center;
+  margin: 0;
+}
+
+header h1 .logo {
+  height: 80px;                  /* adjust size as you like */
+  width: auto;
+  margin-right: 10px;            /* space between logo and text */
+}
+
+/* Top nav: horizontal links */
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline;
+  margin: 0 12px;
+}
+
+header nav a {
+  color: black;
+  font-weight: bold;
+}

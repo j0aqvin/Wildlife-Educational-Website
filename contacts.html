@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SSY – Contact</title>
+  <meta name="description" content="Contact SSY.">
+  <meta name="author" content="Chris & Joaquin">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- this is the top global navigation -->
+
+  <header id="top">
+   <div class="branding">
+    <h1> 
+
+      <img src="images/sablelogo.png" alt="SSY logo" class="logo">
+       Seals n Sables 
+
+    </h1>
+   </div>
+
+  <nav>
+   <ul>
+     <li> <a href="index.html">SSY </a> </li>
+     <li> <a href="environments.html">More Wildlife </a> </li>
+     <li> <a href="contacts.html"> Contact </a> </li>
+   </ul>
+  </nav>
+</header>
+
+  <!-- Hero image -->
+  <figure>
+    <img src="images/contact-hero.jpg" alt="Silhouette of wildlife and nature">
+    <figcaption>Get in touch with SSY.</figcaption>
+  </figure>
+
+  <!-- Quick link nav -->
+  <nav>
+    <ul>
+      <li><a href="#form">Contact Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form id="form" method="get" action="mailto:ssy@example.com">
+      <fieldset>
+        <legend>Contact Us</legend>
+
+        <p>
+          <label for="salutation">Salutation:</label>
+          <select id="salutation" name="salutation" required>
+            <option value="">--Select--</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Dr.</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required autofocus placeholder="Jane">
+        </p>
+
+        <p>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required placeholder="Doe">
+        </p>
+
+        <p>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required placeholder="123-456-7890"
+               
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com">
+        </p>
+
+        <p>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </p>
+
+        <p>
+          <label for="body">Message:</label>
+<br>
+          <textarea id="body" name="body" rows="5" cols="30" required></textarea>
+        </p>
+
+        <!-- Radios -->
+        <p>Preferred contact method:</p>
+        <p>
+          <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+          <label for="contactEmail">Email</label>
+          <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+          <label for="contactPhone">Phone</label>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>Subscribe to:</p>
+        <p>
+          <input type="checkbox" id="news" name="subscribe" value="newsletter">
+          <label for="news">Newsletter</label>
+          <input type="checkbox" id="updates" name="subscribe" value="updates">
+          <label for="updates">Updates</label>
+        </p>
+
+        <p>
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </p>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SSY</p>
+  </footer>
+</body>
+</html>
