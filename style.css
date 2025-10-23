@@ -133,3 +133,207 @@ header nav a {
   color: black;
   font-weight: bold;
 }
+
+/* ====== Base reset (lightweight) ====== */
+min-height: 70vh; /* creates scrollable distance on each anchor */
+}
+
+/* --- image + figure styling for floated images --- */
+.float-right {
+  float: right;
+  width: auto;        /* controls total width of the figure */
+  margin: 0 0 1rem 1rem;
+  text-align: center;  /* centers caption under image */
+}
+
+.float-right img {
+  width: auto;         /* fills the figure width */
+  height: 250px;
+  border-radius: 8px;  /* optional rounded corners */
+  display: block;
+}
+
+.float-right figcaption {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+}
+
+/* ====== Simple gallery cards (no grid/flex) ====== */
+/* use inline-block “cards”; 3 per row on large screens */
+.gallery { margin: 0.5rem -0.5rem; }
+.gallery .card {
+display: inline-block;
+vertical-align: top;
+width: 32%;
+margin: 0.5rem;
+border: 1px solid #e6e6e6;
+background: #fff;
+box-sizing: border-box;
+}
+.gallery .card figure { margin: 0; }
+.gallery .card img { width: 100%; height: 180px; object-fit: cover; display:block; }
+.gallery .card .card-body { padding: 0.5rem 0.75rem; }
+.gallery .card h3 { margin: 0.5rem 0; font-size: 1.1rem; }
+
+
+/* ====== Fun facts list ====== */
+.fun-facts {
+background: #f9fbff;
+border: 1px solid #dbe9ff;
+padding: 0.75rem 1rem;
+margin: 0.5rem 0 1rem;
+}
+.fun-facts h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.fun-facts ul { margin-left: 1.25rem; }
+
+
+/* ====== Table styling (striped) ====== */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+caption { text-align: left; font-weight: bold; margin-bottom: 0.5rem; }
+th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+thead th { background: #f4f4f4; }
+tbody tr:nth-child(odd) { background: #ffffff; }
+tbody tr:nth-child(even) { background: #f9f9f9; }
+
+
+/* ====== Contact form ====== */
+form fieldset { border: 1px solid #ddd; padding: 1rem; margin-top: 1rem; background: #fff; }
+form legend { font-weight: bold; padding: 0 0.25rem; }
+form p { margin: 0.5rem 0; }
+form label { display: inline-block; width: 10rem; vertical-align: top; }
+
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], select, textarea {
+width: 60%; max-width: 28rem; padding: 0.4rem; border: 1px solid #bbb; border-radius: 3px; font: inherit; box-sizing: border-box;
+}
+textarea { min-height: 6rem; }
+
+
+input[type="radio"], input[type="checkbox"] { margin-right: 0.3rem; }
+input[type="submit"], input[type="reset"] {
+display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid #333; background: #222; color: #fff; border-radius: 4px; cursor: pointer; margin-right: 0.5rem;
+}
+input[type="submit"]:hover, input[type="reset"]:hover { background: #444; }
+
+/* --- Sable text + image side-by-side, centered vertically --- */
+.sable-section {
+  text-align: center;        /* centers the whole block */
+  margin: 2rem auto;
+  white-space: nowrap;       /* keeps them on the same line */
+}
+
+.sable-text,
+.sable-image {
+  display: inline-block;     /* side-by-side */
+  vertical-align: middle;    /* centers them vertically */
+  white-space: normal;       /* allows wrapping inside */
+}
+
+.sable-text {
+  width: 45%;
+  text-align: center;        /* center-aligns heading and paragraph text */
+  margin-right: 2%;
+}
+
+.sable-text h2 {
+  margin-bottom: 1rem;
+}
+
+.sable-text p {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.sable-image {
+  width: 45%;
+}
+
+.sable-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.sable-text h2 {
+  font-size: 2rem;           /* bigger heading */
+  font-weight: bold;         /* makes it stand out */
+  margin-bottom: 1rem;
+}
+
+/* make the scientific name italic and slightly smaller but still visible */
+.sable-text h2 em {
+  font-style: italic;
+  font-size: 1.5rem;         /* smaller than main word */
+  color: #333;               /* slightly softer color */
+}
+ 
+s
+.sable-text p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* ====== Footer ====== */
+footer {
+background: #fff;
+border-top: 1px solid #e6e6e6;
+margin-top: 1rem;
+padding: 1rem 16px;
+text-align: center;
+color: #555;
+}
+
+/* --- Fun Facts styling upgrade --- */
+.fun-facts {
+  background: #f9fbff;
+  border: 1px solid #dbe9ff;
+  padding: 1.25rem 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.fun-facts h3 {
+  font-size: 2rem;  
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #002855;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.fun-facts ul {
+  list-style-type: none;       /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.fun-facts li {
+  display: inline-block;       /* side-by-side horizontally */
+  width: 30%;                  /* each takes about 1/3 of the width */
+  margin: 0 1%;                /* small spacing between them */
+  font-size: 1rem;
+  color: #222;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Make sure they stack vertically on smaller screens */
+@media (max-width: 768px) {
+  .fun-facts li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+}

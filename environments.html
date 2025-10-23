@@ -1,131 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SSY – Environments</title>
-  <meta name="description" content="Habitats of the sable and the seal, plus featured animals.">
-  <meta name="author" content="Your Names">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header>
+    <div class="branding">
+      <h1>
+        <img class="logo" src="images/ssylogo.png" alt="SSY logo" />
+        Seals & Sables Yearning
+      </h1>
+    </div>
+    <nav aria-label="primary">
+      <ul>
+        <li><a href="index.html">SSY</a></li>
+        <li><a href="environments.html" class="current">Environments</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- this is the top global navigation -->
-
-  <header id="top">
-   <div class="branding">
-    <h1> 
-
-      <img src="images/sablelogo.png" alt="SSY logo" class="logo">
-       Seals n Sables 
-
-    </h1>
-   </div>
-
-  <nav>
-   <ul>
-     <li> <a href="index.html">SSY </a> </li>
-     <li> <a href="environments.html">More Wildlife </a> </li>
-     <li> <a href="contacts.html"> Contact </a> </li>
-   </ul>
-  </nav>
-</header>
-
-  <!-- main top image -->
+  <!-- Hero -->
   <figure id="landscapemc">
-    <img src="images/landscape.jpg" alt="landscapes for sable and seal habitats">
+    <img src="images/landscape-hero.jpg" alt="Landscape montage" />
+    <figcaption>Habitats that sustain sables and seals.</figcaption>
   </figure>
 
-  <!-- Quick links nav -->
-    <nav class="subnav">
+  <!-- Horizontal subheader (section links) -->
+  <nav id="page-links" class="horizontal-nav" aria-label="section links">
     <ul>
       <li><a href="#sable-habitat">Sable Habitat</a></li>
       <li><a href="#seal-habitat">Seal Habitat</a></li>
       <li><a href="#featured">Featured Animals</a></li>
-      <li><a href="#facts-table">Facts Table</a></li>
+      <li><a href="#facts-table">Quick Facts</a></li>
     </ul>
   </nav>
 
   <main>
-    <article id="sable-habitat">
+    <!-- SABLE HABITAT -->
+    <article id="sable-habitat" class="section">
       <h2>Sable Habitat</h2>
-      <p>Sables thrive in forested areas with abundant small prey and seasonal fruits.</p>
+      <p>
+        Sables thrive in forested areas with abundant small prey and seasonal fruits.
+      </p>
+
+      <figure class="float-right">
+        <img src="images/sable-taiga.jpg" alt="Taiga habitat for sables" />
+        <figcaption>Taiga and mixed woodland are common sable territories.</figcaption>
+      </figure>
+
+      <div class="gallery">
+        <div class="card">
+          <figure>
+            <img src="images/forest-canopy.jpg" alt="Conifer canopy" />
+          </figure>
+          <div class="card-body">
+            <h3>Canopy Cover</h3>
+            <p>Dense cover offers protection and prey opportunities.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/understory.jpg" alt="Forest understory" />
+          </figure>
+          <div class="card-body">
+            <h3>Understory Paths</h3>
+            <p>Narrow trails and logs aid movement and hunting.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/seasonal-berries.jpg" alt="Seasonal berries" />
+          </figure>
+          <div class="card-body">
+            <h3>Seasonal Foods</h3>
+            <p>Berries supplement diet when small prey is scarce.</p>
+          </div>
+        </div>
+      </div>
     </article>
 
-    <article id="seal-habitat">
+    <!-- SEAL HABITAT -->
+    <article id="seal-habitat" class="section">
       <h2>Seal Habitat</h2>
-      <p>Seals inhabit marine environments, often hauling out on rocks, beaches, or ice.</p>
+      <p>
+        Seals inhabit marine environments, often hauling out on rocks, beaches, or ice.
+      </p>
+
+      <div class="gallery">
+        <div class="card">
+          <figure>
+            <img src="images/kelp-forest.jpg" alt="Kelp forest" />
+          </figure>
+          <div class="card-body">
+            <h3>Kelp Forests</h3>
+            <p>Rich feeding areas for fish and invertebrates.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/ice-edge.jpg" alt="Sea ice edge" />
+          </figure>
+          <div class="card-body">
+            <h3>Ice Edge</h3>
+            <p>Critical for breeding and resting in polar regions.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/estuary.jpg" alt="Estuary channel" />
+          </figure>
+          <div class="card-body">
+            <h3>Estuaries</h3>
+            <p>Mixing waters can be productive hunting grounds.</p>
+          </div>
+        </div>
+      </div>
     </article>
 
-    <section id="featured">
+    <!-- FEATURED ANIMALS -->
+    <section id="featured" class="section">
       <h2>Featured Animals</h2>
 
       <article>
-        <h3>
-
-<figure id="goldfishpic">
-  <img src="images/goldfishswim.png" alt="goldfishy">
-</figure>
-
-Goldfish
-
-</h3>
+        <h3>Goldfish</h3>
+        <figure id="goldfishpic">
+          <img src="images/goldfishswim.png" alt="Goldfish swimming" />
+          <figcaption>Friendly freshwater icon.</figcaption>
+        </figure>
         <p>
-          Goldfish are often thought of as being forgetful, a belief that has become part of popular culture. 
-          Their scientific name is <em>Carassius auratus</em>, though many people found it difficult to pronounce. 
-          For this reason, the simple yet familiar term “goldfish” was used.
+          Goldfish are freshwater fish often kept in ponds and tanks.
         </p>
       </article>
 
       <article>
         <h3>Penguin</h3>
         <p>
-          Penguins are flightless birds that are excellent swimmers, using their flippers to move quickly through the water. 
-          They are found mainly in the Southern Hemisphere, with the Emperor Penguin being the largest species.
+          Flightless birds with powerful flippers, mainly in the Southern Hemisphere.
         </p>
       </article>
 
       <article>
         <h3>Dragon</h3>
         <p>
-          Dragons are mythical creatures that appear in stories and folklore around the world. 
-          In many cultures, they are symbols of power, wisdom, or danger, making them one of the most iconic legendary animals.
+          Mythical creature in folklore; symbol of strength and wisdom in many cultures.
         </p>
       </article>
     </section>
 
-    <!-- quick face table -->
+    <!-- QUICK FACTS TABLE -->
+    <section id="facts-table" class="section">
+      <h2>Quick Facts</h2>
 
-    <section id="facts-table">
-      <h2>Quick Facts Table</h2>
-      <table border="1" summary="Quick facts about sable and seal habitats">
-        <caption>Habitats & Notes</caption>
+      <table>
+        <caption>At-a-glance comparisons</caption>
         <thead>
           <tr>
             <th>Animal</th>
-            <th>Primary Habitat</th>
-            <th>Diet</th>
-            <th>Notes</th>
+            <th>Habitat</th>
+            <th>Notable Feature</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th rowspan="2">Sable</th>
-            <td>Coniferous forest</td>
-            <td>Small mammals, berries</td>
-            <td>Dense cover preferred</td>
+            <td>Sable</td>
+            <td>Conifer &amp; mixed forests</td>
+            <td>Agile mustelid; silky coat</td>
           </tr>
           <tr>
-            <td>Mixed woodland</td>
-            <td>Omnivorous</td>
-            <td>Highly adaptable</td>
+            <td>Seal</td>
+            <td>Coastal &amp; polar seas</td>
+            <td>Streamlined swimmer; whiskers</td>
           </tr>
           <tr>
-            <th>Seal</th>
-            <td>Coastal marine and ice edges</td>
-            <td>Fish, squid, crustaceans</td>
-            <td>Haul-out on rocks/ice</td>
+            <td colspan="3">
+              Merged cell example for rubric: Shared pressures include habitat loss and climate impacts.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -133,7 +190,7 @@ Goldfish
   </main>
 
   <footer>
-    <p>&copy; 2025 SSY</p>
+    <p>&copy; 2025 SSY. <span class="muted">All rights reserved.</span></p>
   </footer>
 </body>
 </html>
