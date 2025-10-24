@@ -18,6 +18,13 @@ figure {
   display: block;
 }
 
+/* --- Light blue background for entire site --- */
+body {
+  background-color: #e0f3ff; /* a soft, almost white blue */
+  color: #111;               /* keeps text readable */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 #landscapemc img {
   width: 100%;          
@@ -67,7 +74,7 @@ header nav a {
 
 .subnav {
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #c3deef;
   padding: 16px 0;
   margin: 0;
 }
@@ -380,7 +387,7 @@ color: #555;
 
 /* --- Fun Facts styling upgrade --- */
 .fun-facts {
-  background: #f9fbff;
+  background: #c3deef;
   border: 1px solid #dbe9ff;
   padding: 1.25rem 1rem;
   margin: 1rem auto;
@@ -393,7 +400,7 @@ color: #555;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #002855;
+  color: black;
   margin-bottom: 1.25rem;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
