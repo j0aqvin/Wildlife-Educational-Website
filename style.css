@@ -565,6 +565,47 @@ color: #555;
   color: #2f7a2f;
 }
 
+/* ====== Centered fun-facts table with theme color ====== */
+.fun-facts table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.fun-facts caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.fun-facts th,
+.fun-facts td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.fun-facts th {
+  background-color: #c3deef;  /* same as subnav bar */
+}
+
+.green-theme .fun-facts th {
+  background-color: #c8eac8;  /* match green theme subnav */
+}
+
+.fun-facts td {
+  background-color: #ffffff;
+}
+
+/* Adjust padding and centering for cleaner layout */
+.fun-facts {
+  padding: 1rem 0.5rem;
+  margin: 1.5rem auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
 /* ====== Header background and text for green theme ====== */
 .green-theme header {
   background-color: #cde8cd;   /* soft pastel green background */
