@@ -375,6 +375,25 @@ s
   max-width: 700px;          /* keeps text nicely centered */
 }
 
+
+/* --- simple back to top button --- */
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #1F4964;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-to-top:hover {
+  background-color: #0066cc; /* slightly lighter on hover */
+}
+
+
 /* ====== Footer ====== */
 footer {
 background: #fff;
@@ -420,7 +439,7 @@ color: #555;
   font-size: 1rem;
   color: #222;
   vertical-align: top;
-  text-align: left;
+  text-align: center;
   line-height: 1.4;
 }
 
