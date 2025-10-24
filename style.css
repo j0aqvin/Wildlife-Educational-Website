@@ -1,4 +1,4 @@
-<!-- main top images -->
+/* main top images */
 
 body {
   margin: 0;
@@ -142,8 +142,7 @@ header nav a {
 }
 
 /* ====== Base reset (lightweight) ====== */
-min-height: 70vh; /* creates scrollable distance on each anchor */
-}
+/* min-height: 70vh; creates scrollable distance on each anchor */
 
 /* --- image + figure styling for floated images --- */
 .float-right {
@@ -164,7 +163,6 @@ min-height: 70vh; /* creates scrollable distance on each anchor */
   font-size: 0.875rem;
   color: #555;
   margin-top: 0.25rem;
-}
 }
 
 /* ====== Simple gallery cards (no grid/flex) ====== */
@@ -281,7 +279,6 @@ input[type="submit"]:hover, input[type="reset"]:hover { background: #444; }
   color: #333;               /* slightly softer color */
 }
  
-s
 .sable-text p {
   text-align: center;
   font-size: 1.1rem;
@@ -306,7 +303,7 @@ s
 .seal-image {
   width: 45%;
   margin-right: 2%;        
-  float: none
+  float: none;
 }
 
 .seal-image img {
