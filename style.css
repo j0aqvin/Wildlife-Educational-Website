@@ -28,7 +28,7 @@ body {
 
 #landscapemc img {
   width: 100%;          
-  height: 500px;        /* your chosen banner height */
+  height: 760px;        /* your chosen banner height */
   object-fit: cover;    /* crop so it fills the box */
   object-position: center;  /* keep the middle of the image visible */
   display: block;
@@ -448,4 +448,140 @@ color: #555;
     text-align: center;
     margin-bottom: 0.75rem;
   }
+}
+
+/* ====== Full-width image with overlay text ====== */
+.full-width {
+  position: relative;         /* lets us place text on top of the image */
+  margin: 0;
+}
+
+.full-width img {
+  width: 100%;                /* make the image stretch across the screen */
+  height: 500px;              /* same height as your main banner */
+  object-fit: cover;          /* keeps image proportionate while filling */
+  object-position: center;    /* centers the image area */
+  display: block;
+}
+
+/* overlay text that appears on top of the image */
+.overlay-text {
+  position: absolute;
+  top: 50%;                   /* centers vertically */
+  right: 5%;                  /* positions it on the right side */
+  transform: translateY(-50%);/* perfect vertical centering */
+  background-color: rgba(255, 255, 255, 0.6); /* light see-through box */
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: right;          /* keeps heading text aligned right */
+}
+
+.overlay-text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ====== More Featured Wildlife Section ====== */
+#featured-wildlife {
+  text-align: center;        /* centers heading and paragraph */
+  margin: 3rem auto;         /* adds spacing above and below */
+  width: 80%;                /* prevents stretching too wide */
+}
+
+#featured-wildlife h2 {
+  font-size: 2rem;           /* large clear title */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#featured-wildlife p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 2rem;       /* space before the boxes */
+}
+
+/* centers the 3 gallery cards underneath */
+.gallery {
+  text-align: center;
+}
+
+.gallery .card {
+  display: inline-block;     /* sit side-by-side */
+  vertical-align: top;
+  width: 30%;                /* 3 per row */
+  margin: 0 1%;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery .card .card-body {
+  padding: 0.5rem 0.75rem;
+}
+
+.gallery .card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ====== Green Theme (for environments page) ====== */
+.green-theme {
+  background-color: #e6f7e6; /* soft pastel green */
+  color: #111;
+}
+
+/* adjust subnav for green theme */
+.green-theme .subnav {
+  background-color: #c8eac8;  /* slightly darker soft green */
+}
+
+.green-theme .fun-facts {
+  background: #d8f2d8;
+  border: 1px solid #b9dfb9;
+}
+
+.green-theme header,
+.green-theme footer {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* optional: hover accents for links in this theme */
+.green-theme a:hover {
+  color: #2f7a2f;
+}
+
+/* ====== Header background and text for green theme ====== */
+.green-theme header {
+  background-color: #cde8cd;   /* soft pastel green background */
+  color: #000000;              /* black text */
+  padding: 10px 16px;
+}
+
+.green-theme header h1 {
+  color: #000000;              /* black for title text */
+}
+
+.green-theme header nav a {
+  color: #000000;              /* black for links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.green-theme header nav a:hover {
+  color: #1a4b1a;              /* dark forest green on hover */
 }
