@@ -298,8 +298,8 @@ s
 
 .seal-image {
   width: 45%;
-  margin-right: 2%;         /* space between image and text */
-  float: none !important;   /* kill any float leftovers */
+  margin-right: 2%;        
+  float: none
 }
 
 .seal-image img {
@@ -328,7 +328,7 @@ s
 }
 
 .seal-text p {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   line-height: 1.6;
   color: #222;
 }
@@ -344,6 +344,29 @@ s
   .seal-section { white-space: normal; }
 }
 
+/* --- Conservation Status section --- */
+#conservation-status {
+  text-align: center;        /* centers both heading and text */
+  margin: 3rem auto;         /* gives breathing space around it */
+  width: 80%;                /* keeps it from stretching edge-to-edge */
+}
+
+#conservation-status h2 {
+  font-size: 2.0rem;         
+  font-weight: bold;
+  margin-bottom: 1rem;       /* space between title and paragraph */
+  color: black;              
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+}
+
+#conservation-status p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+  margin: 0 auto;
+  max-width: 700px;          /* keeps text nicely centered */
+}
 
 /* ====== Footer ====== */
 footer {
