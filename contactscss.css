@@ -226,6 +226,14 @@ input[type="reset"] {
 }
 
 
+header nav a {
+  text-decoration: none;
+}
+
+header nav a[href="donate.html"] {
+  text-decoration: underline;
+}
+
 
 /* Footer */
 footer {

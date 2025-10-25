@@ -90,13 +90,13 @@ header nav a {
 }
 
 .subnav li {
-  display: table-cell;  /* each <li> becomes equal-width cell */
+  display: table-cell;
 }
 
 .subnav a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;      /* make the words bigger */
+  font-size: 20px;     
   color: black;
 }
 
@@ -106,23 +106,23 @@ header nav a {
 
 
 header {
-  display: flex;                 /* put branding and nav on the same row */
-  justify-content: space-between;/* push left/right */
-  align-items: center;           /* vertical centering */
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;           
   padding: 10px 16px;
 }
 
 /* Logo + title side-by-side */
 header h1 {
-  display: flex;                 /* logo and text inline */
+  display: flex;                 
   align-items: center;
   margin: 0;
 }
 
 header h1 .logo {
-  height: 80px;                  /* adjust size as you like */
+  height: 80px;                  
   width: auto;
-  margin-right: 10px;            /* space between logo and text */
+  margin-right: 10px;            
 }
 
 /* Top nav: horizontal links */
@@ -147,15 +147,15 @@ header nav a {
 /* --- image + figure styling for floated images --- */
 .float-right {
   float: right;
-  width: auto;        /* controls total width of the figure */
+  width: auto;        
   margin: 0 0 1rem 1rem;
-  text-align: center;  /* centers caption under image */
+  text-align: center;  
 }
 
 .float-right img {
-  width: auto;         /* fills the figure width */
+  width: auto;         
   height: 250px;
-  border-radius: 8px;  /* optional rounded corners */
+  border-radius: 8px;  
   display: block;
 }
 
@@ -196,52 +196,23 @@ margin: 0.5rem 0 1rem;
 .fun-facts h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
 .fun-facts ul { margin-left: 1.25rem; }
 
-
-/* ====== Table styling (striped) ====== */
-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-caption { text-align: left; font-weight: bold; margin-bottom: 0.5rem; }
-th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
-thead th { background: #f4f4f4; }
-tbody tr:nth-child(odd) { background: #ffffff; }
-tbody tr:nth-child(even) { background: #f9f9f9; }
-
-
-/* ====== Contact form ====== */
-form fieldset { border: 1px solid #ddd; padding: 1rem; margin-top: 1rem; background: #fff; }
-form legend { font-weight: bold; padding: 0 0.25rem; }
-form p { margin: 0.5rem 0; }
-form label { display: inline-block; width: 10rem; vertical-align: top; }
-
-
-input[type="text"], input[type="email"], input[type="tel"], input[type="search"], select, textarea {
-width: 60%; max-width: 28rem; padding: 0.4rem; border: 1px solid #bbb; border-radius: 3px; font: inherit; box-sizing: border-box;
-}
-textarea { min-height: 6rem; }
-
-
-input[type="radio"], input[type="checkbox"] { margin-right: 0.3rem; }
-input[type="submit"], input[type="reset"] {
-display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid #333; background: #222; color: #fff; border-radius: 4px; cursor: pointer; margin-right: 0.5rem;
-}
-input[type="submit"]:hover, input[type="reset"]:hover { background: #444; }
-
 /* --- Sable text + image side-by-side, centered vertically --- */
 .sable-section {
-  text-align: center;        /* centers the whole block */
+  text-align: center;        
   margin: 2rem auto;
-  white-space: nowrap;       /* keeps them on the same line */
+  white-space: nowrap;       
 }
 
 .sable-text,
 .sable-image {
-  display: inline-block;     /* side-by-side */
-  vertical-align: middle;    /* centers them vertically */
-  white-space: normal;       /* allows wrapping inside */
+  display: inline-block;     
+  vertical-align: middle;    
+  white-space: normal;       
 }
 
 .sable-text {
   width: 45%;
-  text-align: center;        /* center-aligns heading and paragraph text */
+  text-align: center;        
   margin-right: 2%;
 }
 
@@ -625,4 +596,26 @@ color: #555;
 
 .green-theme header nav a:hover {
   color: #1a4b1a;              /* dark forest green on hover */
+}
+
+#sable .sable-text p:first-of-type::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+
+header nav a[href="index.html"] {
+  text-decoration: underline;
+}
+
+.green-theme header nav a[href="index.html"] {
+  text-decoration: none;
+}
+
+.green-theme header nav a[href="environments.html"] {
+  text-decoration: underline;
 }
