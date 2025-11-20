@@ -2,178 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SSY – Contact</title>
-  <meta name="description" content="Contact SSY.">
+  <title>SSY – Donate</title>
+  <meta name="description" content="Support SSY by donating to wildlife protection.">
   <meta name="author" content="Chris & Joaquin">
+
+  <!-- Responsive layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Assignment requirement -->
+  <link rel="stylesheet" href="normalize.css">
+
+  <!-- Donation page CSS (ONLY for this page) -->
   <link rel="stylesheet" href="contactscss.css">
 </head>
 
-<body>
-  <!-- Header / global nav -->
-  <header id="top">
-    <div class="branding">
-      <h1>
-        <img src="images/sablelogo.png" alt="SSY logo" class="logo" />
-        Seals n Sables
-      </h1>
-    </div>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html">SSY</a></li>
-        <li><a href="environments.html">More Wildlife</a></li>
-        <li><a href="donate.html">Donate</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="donate-theme">
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Hero -->
-  <section class="hero">
-  <div class="hero-text">
-    <h2><a href="#donate-form">Help protect and rescue marine wildlife today &lt;3 </a></h2>
+  <div class="page">
+    <!-- Global header -->
+    <header id="top" class="site-header">
+      <div class="branding">
+        <h1 class="site-title">
+          <img src="images/sablelogo.png" alt="SSY logo" class="logo">
+          Seals n Sables
+        </h1>
+      </div>
+      <nav aria-label="Primary" class="primary-nav">
+        <ul>
+          <li><a href="index.html">SSY</a></li>
+          <li><a href="environments.html">More Wildlife</a></li>
+          <li><a href="donate.html" aria-current="page">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero donate-hero">
+      <div class="hero-text">
+        <h2><a href="#donate-form">Help protect and rescue marine wildlife ❤️</a></h2>
+      </div>
+    </section>
+
+    <main id="main" class="wrap">
+      <!-- Progress Section -->
+      <section aria-labelledby="progress">
+        <h2 id="progress">Campaign Progress</h2>
+
+        <p class="goal-head">
+          <strong>$18,460 raised</strong>
+          <span class="note">of $25,000 goal</span>
+        </p>
+
+        <div class="progress" role="img" aria-label="74% of goal reached">
+          <div class="bar"></div>
+        </div>
+      </section>
+
+      <!-- Donation Form -->
+      <form id="donate-form" method="post" action="https://example.com/process-donation">
+        <fieldset>
+          <legend>Choose Your Gift</legend>
+
+          <div class="toggles" role="radiogroup" aria-label="Donation frequency">
+            <label class="toggle">
+              <input type="radio" name="frequency" value="once" checked>
+              One-time
+            </label>
+            <label class="toggle">
+              <input type="radio" name="frequency" value="monthly">
+              Monthly
+            </label>
+          </div>
+
+          <div class="amounts">
+            <label class="chip">
+              <input type="radio" name="amount" value="10">
+              $10
+            </label>
+
+            <label class="chip">
+              <input type="radio" name="amount" value="25" checked>
+              $25
+            </label>
+
+            <label class="chip">
+              <input type="radio" name="amount" value="50">
+              $50
+            </label>
+
+            <label class="chip">
+              <input type="radio" name="amount" value="100">
+              $100
+            </label>
+
+            <label class="chip">
+              <input type="radio" name="amount" value="other" id="otherradio">
+              Other
+            </label>
+
+            <div class="other-wrap">
+              <label for="otherAmount">Other amount (CAD)</label>
+              <input type="number" id="otherAmount" name="other_amount" min="1" step="1">
+            </div>
+          </div>
+
+          <p class="note">
+            Your donation is tax-receiptable in Canada. Selecting “Monthly” makes this recurring.
+          </p>
+        </fieldset>
+
+        <!-- Donor info -->
+        <fieldset>
+          <legend>Donor Information</legend>
+
+          <div class="inline">
+            <div>
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="first_name" required>
+            </div>
+
+            <div>
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="last_name" required>
+            </div>
+          </div>
+
+          <div class="inline">
+            <div>
+              <label for="email">Email (for your receipt)</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="inline">
+            <div>
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select…</option>
+                <option value="CA">Canada</option>
+                <option value="US">United States</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="note">Optional note</label>
+              <textarea id="note" name="note" rows="3"></textarea>
+            </div>
+          </div>
+
+          <p>
+            <label>
+              <input type="checkbox" name="consent" required>
+              I agree to SSY’s privacy policy.
+            </label>
+          </p>
+        </fieldset>
+
+        <!-- Summary -->
+        <div class="summary">
+          <div>
+            <strong>Review & submit</strong>
+            <div class="note">Amount and frequency based on your selections.</div>
+          </div>
+
+          <div>
+            <button class="btn" type="submit">Complete Donation</button>
+            <button class="btn secondary" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Impact Section -->
+      <section aria-labelledby="impact">
+        <h2 id="impact">Your Impact</h2>
+        <ul>
+          <li>$25: one day of formula for an orphaned pup</li>
+          <li>$50: medical supplies for a rescue intake</li>
+          <li>$100: fuel for a shoreline patrol</li>
+        </ul>
+      </section>
+    </main>
+
+    <a href="#top" class="back-to-top">Back to top</a>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 SSY</p>
+    </footer>
   </div>
-</section>
-
-  <main class="wrap">
-    <!-- Goal (static demo values; adjust text and .bar width as needed) -->
-    <section aria-labelledby="progress">
-      <h2 id="progress">Campaign Progress</h2>
-      <p class="goal-head">
-        <strong>$18,460 raised</strong>
-        <span class="note">of $25,000 goal</span>
-      </p>
-      <div class="progress" role="img" aria-label="74% of goal reached">
-        <div class="bar"></div>
-      </div>
-    </section>
-
-    <!-- Donation Form (HTML only) -->
-    <form id="donate-form" method="post" action="https://example.com/process-donation">
-      <fieldset>
-        <legend>Choose Your Gift</legend>
-
-        <!-- Frequency (radios) -->
-        <div class="toggles" role="radiogroup" aria-label="Donation frequency">
-          <label class="toggle">
-            <input type="radio" name="frequency" value="once" checked />
-            One-time
-          </label>
-          <label class="toggle">
-            <input type="radio" name="frequency" value="monthly" />
-            Monthly
-          </label>
-        </div>
-
-        <!-- Amount options (radios) -->
-        <div class="amounts" style="margin-top:.75rem">
-          <label class="chip">
-            <input type="radio" name="amount" value="10" />
-            $10
-          </label>
-          <label class="chip">
-            <input type="radio" name="amount" value="25" checked />
-            $25
-          </label>
-          <label class="chip">
-            <input type="radio" name="amount" value="50" />
-            $50
-          </label>
-          <label class="chip">
-            <input type="radio" name="amount" value="100" />
-            $100
-          </label>
-          <!-- The "Other" radio must come BEFORE the .other-wrap for the CSS reveal to work -->
-          <label class="chip">
-            <input type="radio" id="amountOther" name="amount" value="other" />
-            Other
-          </label>
-
-          <!-- Revealed only when “Other” is selected (CSS sibling selector) -->
-          <div class="other-wrap">
-            <label for="otherAmount">Other amount (CAD)</label>
-            <input type="number" id="otherAmount" name="other_amount" min="1" step="1" placeholder="Enter amount" />
-            <small class="help">Enter a whole number (e.g., 35)</small>
-          </div>
-        </div>
-
-        <!-- Human-readable summary (static text without JS) -->
-        <p class="note" style="margin-top:.75rem">
-          Your donation is tax-receiptable in Canada. Selecting “Monthly” will make this a recurring gift.
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Donor Information</legend>
-
-        <div class="inline">
-          <div>
-            <label for="fname">First name</label>
-            <input type="text" id="fname" name="first_name" required />
-          </div>
-          <div>
-            <label for="lname">Last name</label>
-            <input type="text" id="lname" name="last_name" required />
-          </div>
-        </div>
-
-        <div class="inline">
-          <div>
-            <label for="email">Email (for your receipt)</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-        </div>
-
-        <div class="inline">
-          <div>
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
-              <option value="">Select…</option>
-              <option value="CA">Canada</option>
-              <option value="US">United States</option>
-              <option value="OTHER">Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="note">Optional note</label>
-            <textarea id="note" name="note" rows="3" placeholder="Direct your gift to a program or leave a message."></textarea>
-          </div>
-        </div>
-
-        <p class="inline">
-          <label>
-            <input type="checkbox" name="consent" required />
-            I agree to SSY’s privacy policy and understand this is a charitable donation.
-          </label>
-        </p>
-      </fieldset>
-
-      <div class="summary" aria-live="polite">
-        <div>
-          <strong>Review & submit</strong>
-          <div class="note">Amount and frequency are based on your selections above.</div>
-        </div>
-        <div>
-          <button class="btn" type="submit">Complete Donation</button>
-          <button class="btn secondary" type="reset">Reset</button>
-        </div>
-      </div>
-    </form>
-
-    <section aria-labelledby="impact">
-      <h2 id="impact">Your Impact</h2>
-      <ul>
-        <li>$25: one day of formula for an orphaned pup</li>
-        <li>$50: medical supplies for a rescue intake</li>
-        <li>$100: fuel for a shoreline patrol and retrieval</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 SSY</p>
-  </footer>
 </body>
 </html>

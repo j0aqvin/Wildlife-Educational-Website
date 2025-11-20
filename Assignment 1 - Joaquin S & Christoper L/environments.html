@@ -1,214 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title> SSY - More Wildlife </title>
+  <title>SSY - More Wildlife</title>
   <meta name="description" content="Habitats and environments for sables and seals.">
   <meta name="author" content="Chris & Joaquin">
+
+  <!-- Makes the page respond to device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Required by assignment: normalize.css -->
+  <link rel="stylesheet" href="normalize.css">
+
+  <!-- Main site CSS (same as index.html) -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="green-theme">
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- top global navigation -->
-  <header id="top">
-    <div class="branding">
-      <h1>
-        <img src="images/sablelogo.png" alt="SSY logo" class="logo">
-        Seals n Sables
-      </h1>
-    </div>
+  <!-- Page wrapper (becomes 790px wide on large screens) -->
+  <div class="page">
+    <!-- top global navigation -->
+    <header id="top" class="site-header">
+      <div class="branding">
+        <h1 class="site-title">
+          <img src="images/sablelogo.png" alt="SSY logo" class="logo">
+          Seals n Sables
+        </h1>
+      </div>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">SSY</a></li>
+          <li><a href="environments.html" aria-current="page">More Wildlife</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
+    <!-- top banner -->
+    <figure id="landscapemc" class="hero">
+      <img src="images/landscape-hero.jpg" alt="Landscape">
+    </figure>
+
+    <!-- sub navigation -->
+    <nav class="subnav" aria-label="On this page">
       <ul>
-        <li><a href="index.html">SSY</a></li>
-        <li><a href="environments.html">More Wildlife</a></li>
-        <li><a href="donate.html">Donate</a></li>
+        <li><a href="#sable-env">Sables</a></li>
+        <li><a href="#seal-env">Seals</a></li>
+        <li><a href="#featured-wildlife">More Featured Wildlife</a></li>
+        <li><a href="#donate">Donate</a></li>
       </ul>
     </nav>
-  </header>
 
-  <!-- top banner -->
-  <figure id="landscapemc">
-    <img src="images/landscape-hero.jpg" alt="Landscape">
-  </figure>
+    <main id="main">
+      <!-- ==================== SABLE ENVIRONMENT ==================== -->
+      <article id="sable-env" class="section">
+        <figure class="full-width">
+          <img src="images/sable-habitat.jpg" alt="Sable habitat in conifer forest">
+          <div class="overlay-text">
+            <h2>Sable’s Environment</h2>
+          </div>
+          <figcaption>This is where sables live!</figcaption>
+        </figure>
 
-  <!-- sub navigation -->
-  <nav class="subnav">
-    <ul>
-      <li><a href="#sable-env">Sables</a></li>
-      <li><a href="#seal-env">Seals</a></li>
-      <li><a href="#featured-wildlife">More Featured Wildlife</a></li>
-      <li><a href="#donate">Donate</a></li>
-    </ul>
-  </nav>
+        <div class="gallery">
+          <article class="card">
+            <figure>
+              <img src="images/forest-canopy.jpg" alt="Conifer canopy">
+            </figure>
+            <div class="card-body">
+              <h3>Canopy Cover</h3>
+              <p>Dense canopy helps maintain cool, sheltered understory.</p>
+            </div>
+          </article>
 
-  <main>
+          <article class="card">
+            <figure>
+              <img src="images/understory.jpg" alt="Forest understory">
+            </figure>
+            <div class="card-body">
+              <h3>Understory Paths</h3>
+              <p>Brush and logs create pathways for quiet movement.</p>
+            </div>
+          </article>
 
-    <!-- ==================== SABLE ENVIRONMENT ==================== -->
-    <article id="sable-env" class="section">
-      <figure class="full-width">
-        <img src="images/sable-habitat.jpg" alt="Sable habitat in conifer forest">
-        <div class="overlay-text">
-          <h2>Sable’s Environment</h2>
+          <article class="card">
+            <figure>
+              <img src="images/seasonal-berries.jpg" alt="Seasonal berries">
+            </figure>
+            <div class="card-body">
+              <h3>Seasonal Foods</h3>
+              <p>Berries and fruit supplement their carnivorous diet.</p>
+            </div>
+          </article>
         </div>
-      <figcaption> This is where sables live! </figcaption>
-      </figure>
-     
+      </article>
+
+      <!-- ==================== SEAL ENVIRONMENT ==================== -->
+      <article id="seal-env" class="section">
+        <figure class="full-width">
+          <img src="images/seal-enviornment.jpg" alt="Seal haul-out on coastal rocks">
+          <div class="overlay-text">
+            <h2>Seal’s Environment</h2>
+          </div>
+          <figcaption>Seals on a rock!</figcaption>
+        </figure>
+
+        <div class="gallery">
+          <article class="card">
+            <figure>
+              <img src="images/kelp-forest.jpg" alt="Kelp forest">
+            </figure>
+            <div class="card-body">
+              <h3>Kelp Forests</h3>
+              <p>Provide structure and feeding grounds for many species.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="images/seasiderocks.jpg" alt="Seaside rocks">
+            </figure>
+            <div class="card-body">
+              <h3>Ice Edge</h3>
+              <p>Critical platform for resting and pupping.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="images/estuary.jpg" alt="Estuary channel">
+            </figure>
+            <div class="card-body">
+              <h3>Estuaries</h3>
+              <p>Mixing fresh and salt water can boost food availability.</p>
+            </div>
+          </article>
+        </div>
+      </article>
+
+      <!-- ==================== MORE FEATURED WILDLIFE ==================== -->
+      <section id="featured-wildlife" class="section">
+        <h2>More Featured Wildlife</h2>
+        <p>Learn about more fascinating animals found in different habitats.</p>
+      </section>
+
+      <!-- Did you know box for featured animals -->
+      <section class="fun-facts" aria-labelledby="fun-facts-caption">
+        <h3 id="fun-facts-caption">Did you know?</h3>
+        <table>
+          <caption>Fun Facts About Featured Animals</caption>
+          <thead>
+            <tr>
+              <th scope="col">Animal</th>
+              <th scope="col">Interesting Fact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Goldfish</td>
+              <td>Goldfish have a memory span that can last for several months.</td>
+            </tr>
+            <tr>
+              <td>Penguin</td>
+              <td>Some penguins can dive over 500 meters deep to hunt for fish.</td>
+            </tr>
+            <tr>
+              <td>Dragon</td>
+              <td>Dragons appear in legends across nearly every ancient culture.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <a href="https://www.worldwildlife.org/species/">More interesting animals here!</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <div class="gallery">
-        <div class="card">
+        <article class="card">
           <figure>
-            <img src="images/forest-canopy.jpg" alt="Conifer canopy">
+            <img src="images/goldfishs.jpg" alt="Goldfish swimming">
           </figure>
           <div class="card-body">
-            <h3>Canopy Cover</h3>
-            <p>Dense canopy helps maintain cool, sheltered understory.</p>
+            <h3>Goldfish</h3>
+            <p>Goldfish are freshwater fish known for their vibrant color and adaptability.</p>
           </div>
-        </div>
-        <div class="card">
+        </article>
+
+        <article class="card">
           <figure>
-            <img src="images/understory.jpg" alt="Forest understory">
+            <img src="images/dragon.jpg" alt="Illustration of a dragon">
           </figure>
           <div class="card-body">
-            <h3>Understory Paths</h3>
-            <p>Brush and logs create pathways for quiet movement.</p>
+            <h3>Dragon</h3>
+            <p>Symbolic creatures found in myths worldwide, representing strength and wisdom.</p>
           </div>
-        </div>
-        <div class="card">
+        </article>
+
+        <article class="card">
           <figure>
-            <img src="images/seasonal-berries.jpg" alt="Seasonal berries">
+            <img src="images/penguin.jpg" alt="Penguin on ice">
           </figure>
           <div class="card-body">
-            <h3>Seasonal Foods</h3>
-            <p>Berries and fruit supplement their carnivorous diet.</p>
+            <h3>Penguin</h3>
+            <p>Flightless birds adapted to cold climates, known for their playful behavior.</p>
           </div>
-        </div>
+        </article>
       </div>
-    </article>
 
-    <!-- ==================== SEAL ENVIRONMENT ==================== -->
-    <article id="seal-env" class="section">
-      <figure class="full-width">
-        <img src="images/seal-enviornment.jpg" alt="Seal haul-out on coastal rocks">
-        <div class="overlay-text">
-          <h2>Seal’s Environment</h2>
-        </div>
-      <figcaption> Seals on a rock! </figcaption>
-      </figure>
-      
-      <div class="gallery">
-        <div class="card">
-          <figure>
-            <img src="images/kelp-forest.jpg" alt="Kelp forest">
-          </figure>
-          <div class="card-body">
-            <h3>Kelp Forests</h3>
-            <p>Provide structure and feeding grounds for many species.</p>
-          </div>
-        </div>
-        <div class="card">
-          <figure>
-            <img src="images/seasiderocks.jpg" alt="Seaside rocks">
-          </figure>
-          <div class="card-body">
-            <h3>Ice Edge</h3>
-            <p>Critical platform for resting and pupping.</p>
-          </div>
-        </div>
-        <div class="card">
-          <figure>
-            <img src="images/estuary.jpg" alt="Estuary channel">
-          </figure>
-          <div class="card-body">
-            <h3>Estuaries</h3>
-            <p>Mixing fresh and salt water can boost food availability.</p>
-          </div>
-        </div>
-      </div>
-    </article>
+      <!-- CONNECT / DONATE -->
+      <section id="donate" class="section">
+        <h2>Wildlife Campaign - Donate!</h2>
+        <p>Want to help out animals in need? Visit our <a href="donate.html">donation page!</a></p>
+      </section>
+    </main>
 
-    <!-- ==================== MORE FEATURED WILDLIFE ==================== -->
-    <section id="featured-wildlife" class="section">
-      <h2>More Featured Wildlife</h2>
-      <p>Learn about more fascinating animals found in different habitats.</p>
-    </section>
+    <a href="#top" class="back-to-top">Back to Top</a>
 
-    <!-- Did you know box for featured animals -->
- <div class="fun-facts">
-  <h3>Did you know?</h3>
-  <table>
-    <caption>Fun Facts About Featured Animals</caption>
-    <thead>
-      <tr>
-        <th>Animal</th>
-        <th>Interesting Fact</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Goldfish</td>
-        <td>Goldfish have a memory span that can last for several months.</td>
-      </tr>
-      <tr>
-        <td>Penguin</td>
-        <td>Some penguins can dive over 500 meters deep to hunt for fish.</td>
-      </tr>
-      <tr>
-        <td>Dragon</td>
-        <td>Dragons appear in legends across nearly every ancient culture.</td>
-      </tr>
-      <tr>
-        <td colspan="2"><a href="https://www.worldwildlife.org/species/"> More interesting animals here! </a>
-</td>
-      </tr>
-
-    </tbody>
-  </table>
-</div>
-
-    <div class="gallery">
-      <div class="card">
-        <figure>
-          <img src="images/goldfishs.jpg" alt="Goldfish swimming">
-        </figure>
-        <div class="card-body">
-          <h3>Goldfish</h3>
-          <p>Goldfish are freshwater fish known for their vibrant color and adaptability.</p>
-        </div>
-      </div>
-      <div class="card">
-        <figure>
-          <img src="images/dragon.jpg" alt="Illustration of a dragon">
-        </figure>
-        <div class="card-body">
-          <h3>Dragon</h3>
-          <p>Symbolic creatures found in myths worldwide, representing strength and wisdom.</p>
-        </div>
-      </div>
-      <div class="card">
-        <figure>
-          <img src="images/penguin.jpg" alt="Penguin on ice">
-        </figure>
-        <div class="card-body">
-          <h3>Penguin</h3>
-          <p>Flightless birds adapted to cold climates, known for their playful behavior.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONNECT -->
-    <section id="donate" class="section">
-      <h2>Wildlife Campaign - Donate! </h2>
-     <p>Want to help out animals in need? Visit our <a href="donate.html">donation page!</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 SSY. <span class="muted">All rights reserved.</span></p>
-  </footer>
-
-  <a href="#top" class="back-to-top">Back to Top</a>
-
+    <footer class="site-footer">
+      <p>&copy; 2025 SSY. <span class="muted">All rights reserved.</span></p>
+    </footer>
+  </div>
 </body>
 </html>
