@@ -246,11 +246,11 @@ h3 {
   padding-top: 1rem;
   border-top: 1px solid #d8e1e8;
   font-size: 0.9rem;
-  color: #5a6a76;
+  color: #000000;
 }
 
 .muted {
-  color: #8a9aa6;
+  color: c;
 }
 
 /* ========== Environments page extras ========== */
