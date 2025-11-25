@@ -1,7 +1,3 @@
-/* ===============================
-   Donation Page Base Styling
-   (Purple Theme)
-================================*/
 
 body.donate-theme {
   background-color: #f4e6ff; /* Light purple background */
@@ -17,9 +13,7 @@ body.donate-theme {
   border-radius: 0 0 0.75rem 0.75rem;
 }
 
-/* ===============================
-   Header
-================================*/
+/* Header */
 
 .site-header {
   padding: 1rem 0;
@@ -73,9 +67,7 @@ body.donate-theme {
   color: white;
 }
 
-/* ===============================
-   Hero
-================================*/
+/* Hero */
 
 .donate-hero {
   background: url("images/fox.jpg") center/cover no-repeat;
@@ -93,9 +85,7 @@ body.donate-theme {
   font-weight: bold;
 }
 
-/* ===============================
-   Form Layout
-================================*/
+/* Form Layout */
 
 .wrap {
   display: flex;
@@ -191,7 +181,7 @@ textarea:focus {
   margin-right: 0.3rem;
 }
 
-/* Other Amount Reveal */
+/* Other Amount */
 .other-wrap {
   width: 100%;
   display: none;
@@ -210,9 +200,7 @@ textarea:focus {
   color: #6a518b;
 }
 
-/* ===============================
-   Progress Bar
-================================*/
+/* Progress Bar */
 
 .goal-head {
   display: flex;
@@ -233,9 +221,7 @@ textarea:focus {
   height: 100%;
 }
 
-/* ===============================
-   Summary & Buttons
-================================*/
+/* Summary & Buttons */
 
 .summary {
   display: flex;
@@ -271,7 +257,6 @@ textarea:focus {
   background: #c8acf0;
 }
 
-/* Impact List */
 #impact ul {
   padding-left: 1.3rem;
 }
@@ -284,10 +269,6 @@ textarea:focus {
   font-size: 0.9rem;
   color: #7a3cbc;
 }
-
-/* ===============================
-   MEDIA QUERIES
-================================*/
 
 /* ≥590px */
 @media (min-width: 590px) {
