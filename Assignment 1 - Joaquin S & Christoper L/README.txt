@@ -1,20 +1,60 @@
 Part 1 - Teamwork
 
-Joaquin - 
+(Continuing from assignment 1)
+
+Joaquin:
+
+- Built and updated the HTML for index.html and environments.html.
+
+- Added all images, captions, sections, and descriptive content.
+
+- Organized the page using correct semantic HTML (header, nav, main, section, article, footer).
+
+- Connected all in‑page navigation links and IDs for smooth scrolling.
+
+- Cleaned up and improved the layout so it works well with the new responsive CSS.
+
+- Helped integrate normalize.css and ensured all pages linked to the correct CSS files.
 
 
-Christoper - 
+
+Christoper:
+
+- Built and structured donate.html, including the full donation form (inputs, labels, fieldsets, radio buttons, checkboxes, and accessibility attributes).
+
+- Created and refined the CSS for the entire website, including:
+
+	- Global layout
+
+	- Navigation styling
+
+	- Responsive breakpoints at 590px and 790px
+
+	- Hero sections, card layouts, and image galleries
+
+	- The purple theme and full styling for contactscss.css
+
+- Found and prepared images and visual elements for the website.
+
+- Ensured the overall design is consistent across all pages.
 
 
 
+Both of us:
 
+- We collaborated on the parts that affected the whole website:
 
+- Choosing the overall site layout and design direction.
 
+- Creating a unified color theme and adjusting spacing and margins.
 
+- Ensuring all pages linked correctly and flowed well from one to another.
 
+- Running the WAVE accessibility checker and fixing issues (contrast, alt text, labels).
 
+- Testing responsiveness on different screen sizes to make sure the media queries worked.
 
-
+- Reviewing each other’s code and checking the assignment guidelines to ensure everything was included
 
 
 Part 2 - Web Accessibility
