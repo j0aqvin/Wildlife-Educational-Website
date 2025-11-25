@@ -17,7 +17,6 @@ Joaquin:
 - Helped integrate normalize.css and ensured all pages linked to the correct CSS files.
 
 
-
 Christoper:
 
 - Built and structured donate.html, including the full donation form (inputs, labels, fieldsets, radio buttons, checkboxes, and accessibility attributes).
